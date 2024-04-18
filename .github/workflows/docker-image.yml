@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Run the Docker file
-      run: cat Riosevka.toml > private-build-plans.toml && docker run -it --rm -v $PWD:/work fontcc ttf::Riosevka
+      run: docker run -it --rm -v $PWD:/work fontcc ttf::Riosevka
